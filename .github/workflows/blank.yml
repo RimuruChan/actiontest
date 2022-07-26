@@ -28,9 +28,9 @@ jobs:
       - name: Cache Build directory
         uses: actions/cache@v3
         env:
-          cache-name: cache-test
+          cache-name: cache-test1
         with:
           path: |
-            ${{ env.GITHUB_WORKSPACE }}Test
+            Test
           key: ${{ runner.os }}-build-${{ env.cache-name }}-${{github.sha}}
           restore-keys: ${{ runner.os }}-build-${{ env.cache-name }}-
